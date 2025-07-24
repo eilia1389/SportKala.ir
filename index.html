@@ -10,6 +10,76 @@
   <title>Sportkala</title>
   <link rel="icon of web" type="png" href="eilia3.png">
 
+  <style>
+
+  .btn {
+
+    position: relative;
+
+    background: #0f2027;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    overflow: hidden;
+
+    transition: box-shadow 0.3s ease;
+
+  }
+
+
+
+  .btn:hover {
+
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ffffff;
+
+  }
+
+
+
+  .stars {
+
+    position: absolute;
+
+    top: -10px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: none;
+
+    font-size: 24px;
+
+    color: #fffdef;
+
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+
+  }
+
+
+
+  .btn:hover .stars {
+
+    display: block;
+
+    filter: drop-shadow(0 0 10px #fffdef);
+
+  }
+
+  </style>
+
 
 
 <body>
@@ -31,7 +101,7 @@
   <section class="hero">
     <h2>تجهیزات حرفه‌ای برای قهرمانان واقعی</h2>
     <p>از دمبل تا دوچرخه ثابت، همه‌چی اینجاست!</p>
-    <a href="8" target="_blank"><button>مشاهده محصولات</button></a>
+    <a href="8" target="_blank"><button class="btn">مشاهده محصولات</button></a>
   </section>
 
   <section class="products">
