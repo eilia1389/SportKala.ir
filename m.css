@@ -40,7 +40,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* نمایش عمودی در موبایل */
+/* نمایش کاملاً عمودی و بزرگ در موبایل */
 @media screen and (max-width: 768px) {
   .product-section {
     flex-direction: column;
@@ -48,9 +48,19 @@ body {
   }
 
   .product-card {
-    width: 90%;
+    width: 95vw; /* عرض تقریباً تمام صفحه */
+    max-width: 500px; /* اگه خیلی بزرگ شد محدودش کنیم */
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    padding: 25px;
+  }
+
+  .product-card img {
+    border-radius: 30px;
     margin-bottom: 20px;
   }
+}
+
 
 
 
