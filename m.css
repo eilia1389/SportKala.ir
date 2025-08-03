@@ -41,20 +41,17 @@ body {
 }
 
 /* نمایش عمودی در موبایل */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .product-section {
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
-    overflow-x: hidden;
   }
 
   .product-card {
     width: 90%;
-    max-width: 350px;
     margin-bottom: 20px;
   }
-}
+
 
 
 
