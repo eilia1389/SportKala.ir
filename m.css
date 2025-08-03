@@ -42,17 +42,20 @@ body {
 
 @media screen and (max-width: 768px) {
   .product-section {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    display: flex;           /* این خط خیلی مهمه */
+    flex-direction: column;  /* محصولات به صورت عمودی زیر هم */
+    align-items: center;     /* وسط‌چین کردن محتوا */
+    gap: 40px;               /* فاصله بین هر محصول */
+    padding: 20px;
   }
 
   .product-card {
-    width: 95vw;
+    width: 95vw;             /* تقریباً تمام عرض صفحه گوشی */
     max-width: 500px;
     font-size: 1.6rem;
     padding: 30px;
     border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* اختیاری برای زیبایی */
   }
 
   .product-card img {
@@ -61,6 +64,8 @@ body {
     margin-bottom: 20px;
   }
 }
+
+
 
 
 
