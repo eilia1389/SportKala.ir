@@ -99,7 +99,7 @@ nav a:hover {
   margin: 15px;
   padding: 20px;
   width: 280px;
-  border-radius: 10px;
+  border-radius: 25px;
   box-shadow: 0 4px 8px rgba(45, 52, 148, 0.384);
   transition: transform 0.3s ease;
   text-align: center;
@@ -137,3 +137,4 @@ footer {
   z-index: 1000;
   pointer-events: none; /* تا روی عناصر دیگر تأثیر نذاره */
 }
+
