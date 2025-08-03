@@ -42,6 +42,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .product-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     display: flex;           /* این خط خیلی مهمه */
     flex-direction: column;  /* محصولات به صورت عمودی زیر هم */
     align-items: center;     /* وسط‌چین کردن محتوا */
@@ -64,6 +69,7 @@ body {
     margin-bottom: 20px;
   }
 }
+
 
 
 
