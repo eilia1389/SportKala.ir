@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+  background-color: #ffffff65;
+  margin: 0;
+  padding: 0;
+}
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #330000;
+}
+
+.product-card {
+  width: 300px;
+  background:#0a151b;
+  color:white;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0 10px #ff0000;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-15px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* نمایش مناسب در دستگاه‌های موبایل */
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
