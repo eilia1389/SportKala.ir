@@ -61,7 +61,7 @@ body {
   }
 
   .product-card img {
-    width: 69%;
+    width: 90%;
     margin: 0 auto 20px auto;
     border-radius: 40px;
   }
@@ -70,6 +70,7 @@ body {
     font-size: 1.1em;
   }
 }
+
 
 
 
