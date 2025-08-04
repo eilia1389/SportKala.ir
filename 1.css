@@ -1,6 +1,6 @@
-    /* فونت فارسی */
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
+/* پایه */
 * {
   margin: 0;
   padding: 0;
@@ -13,14 +13,28 @@ body {
   color: #333;
   direction: rtl;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* هدر */
 header {
   background: linear-gradient(to left, #0f2747, #471616, #36728c);
   color: white;
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: slideDown 1s ease-out;
 }
 
 header h1 {
@@ -34,18 +48,36 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff0000;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 nav a:hover {
   color: #ff0000;
 }
 
+/* بنر اصلی */
 .hero {
   background: url('https://parsipowder.com/blog/wp-content/uploads/2024/07/Romanian-deadlift-7.webp') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 120px 20px;
   position: relative;
+  animation: fadeIn 2s ease-in;
 }
 
 .hero::after {
@@ -58,6 +90,7 @@ nav a:hover {
 .hero h2, .hero p, .hero button {
   position: relative;
   z-index: 1;
+  animation: fadeIn 1.5s ease;
 }
 
 .hero h2 {
@@ -79,39 +112,46 @@ nav a:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
+  animation: fadeIn 2.5s ease;
 }
 
 .hero button:hover {
   background: darkred;
 }
 
+/* محصولات */
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 50px 20px;
   background: #fff;
+  animation: fadeIn 1.5s ease;
 }
 
 .product {
-  background:#0f2027;
-  color:white;
+  background: #0f2027;
+  color: white;
   margin: 15px;
   padding: 20px;
   width: 280px;
-  border-radius: 30px;
+  border-radius: 50px;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
-  transition: transform 0.3s ease;
   text-align: center;
+  opacity: 0;                       /* برای fade-in */
+  animation: fadeIn 1s forwards;    /* محو شدن هنگام ورود */
+  animation-delay: 0.5s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product:hover {
-  transform: translateY(-15px);
+  transform: translateY(-15px);     /* موقع هاور حرکت به بالا */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .product img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-bottom: 13px;
 }
 
@@ -120,13 +160,17 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+/* فوتر */
 footer {
   background: #2c5364;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+  animation: fadeIn 2s ease;
 }
+
+/* عکس پروفایل گوشه */
 .profile-image {
   position: fixed;
   top: 20px;
@@ -135,5 +179,49 @@ footer {
   height: 100px;
   object-fit: contain;
   z-index: 1000;
-  pointer-events: none; /* تا روی عناصر دیگر تأثیر نذاره */
+  pointer-events: none;
+  animation: fadeIn 2s ease;
 }
+
+/* واکنش‌گرایی موبایل */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+}
+
+
+
+
