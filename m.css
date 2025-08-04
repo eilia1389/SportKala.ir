@@ -54,21 +54,19 @@ body {
   }
 
   .product-card {
-    width: 90%;
+    width: 80%;
     padding: 18px;
-    border-radius: 25px;
+    border-radius: 60px;
     margin: 10px 0;
   }
 
   .product-card img {
     width: 100%;
     margin: 0 auto 20px auto;
-    border-radius: 20px;
+    border-radius: 40px;
   }
 
   h3, p {
     font-size: 1.1em;
   }
 }
-
-
