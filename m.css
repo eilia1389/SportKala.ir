@@ -24,7 +24,7 @@ body {
   background: #0a151b;
   color: white;
   border: 1px solid #ffffff;
-  border-radius: 150px;
+  border-radius: 135px;
   text-align: center;
   padding: 20px;
   box-shadow: 0 0 15px #ff0000;
@@ -40,7 +40,7 @@ body {
 .product-card img {
   width: 100%;
   height: auto;
-  border-radius: 120px;
+  border-radius: 100px;
   margin-bottom: 15px;
 }
 
@@ -70,3 +70,5 @@ body {
     font-size: 1.1em;
   }
 }
+
+
