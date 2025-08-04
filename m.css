@@ -47,6 +47,7 @@ body {
   gap: 20px;
   order: 2;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* کارت محصول */
@@ -82,7 +83,7 @@ body {
 .sidebar.left ul {
   list-style: none;
   padding: 0;
-  margin:10px;
+  margin: 10px;
 }
 
 .sidebar.left li {
@@ -134,20 +135,25 @@ body {
 }
 
 /* واکنش‌گرایی موبایل */
-@media screen and (max-width: 768px) 
-{
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 10px;
+    gap: 15px;
   }
+
   .sidebar {
+    min-width: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    max-height: none !important;
+    margin-bottom: 15px;
+  }
+
+  .product-area {
     width: 100% !important;
     max-width: 100% !important;
-     margin-bottom: 15px;
-    }
-    .product-area {
-      grid-template-columns: 1fr;
-      order: 2;
-    }
+    grid-template-columns: 1fr !important;
+    order: 2;
+  }
 }
