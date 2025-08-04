@@ -32,11 +32,11 @@ body {
 }
 
 .sidebar.left {
-  order: 1;
+  order:3 ;
 }
 
 .sidebar.right {
-  order: 3;
+  order: 1;
 }
 
 /* فضای اصلی محصولات */
