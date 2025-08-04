@@ -186,13 +186,13 @@ footer {
 /* واکنش‌گرایی موبایل */
 @media screen and (max-width: 768px) {
   header h1 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
 
   nav a {
     display: inline-block;
     margin: 5px 10px;
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .hero {
@@ -200,7 +200,7 @@ footer {
   }
 
   .hero h2 {
-    font-size: 2.0rem;
+    font-size: 1.9rem;
   }
 
   .hero p {
@@ -208,7 +208,7 @@ footer {
   }
 
   .hero button {
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 20px;
   }
 
@@ -218,8 +218,9 @@ footer {
   }
 
   .product {
-    width: 49%;
+    width: 68%;
   }
 }
+
 
 
