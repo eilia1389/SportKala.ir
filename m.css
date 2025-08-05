@@ -19,8 +19,8 @@ body {
 
 /* ستون‌ها */
 .sidebar {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 310px;
+  max-width: 310px;
   min-height: 380px;
   max-height: 380px;
   background-color: #fff;
@@ -157,3 +157,4 @@ body {
     order: 2;
   }
 }
+
